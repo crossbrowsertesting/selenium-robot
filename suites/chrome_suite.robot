@@ -1,5 +1,5 @@
 *** Settings ***
-Resource  ../tests/setup.robot
+Resource  ../tests/login_test.robot
 Suite Teardown    Close Browser
 Force Tags        CrossBrowserTesting
  
