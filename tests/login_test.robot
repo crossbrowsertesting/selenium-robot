@@ -8,8 +8,8 @@ ${SiteUrl}            http://crossbrowsertesting.github.io/login-form.html
 ${ExpectedMessage}    You are now logged in!
 ${Message}            You are now logged in!
 ${Delay}              10s
-${CBTUser}            chase@crossbrowsertesting.com
-${AccessKey}          YOURAUTHKEY
+${CBTUser}            Stephen.Mooyoung@smartbear.com
+${AccessKey}          ucc92fccb43b0de9
 ${Video}              true
 ${RemoteUrl}          http://${CBTUser}:${AccessKey}@hub.crossbrowsertesting.com:80/wd/hub
 
