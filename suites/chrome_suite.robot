@@ -5,7 +5,7 @@ Force Tags        CrossBrowserTesting
  
 *** Test Cases ***
 Login Should Succeed with Correct Credentials
-    Open Login Page  BROWSER=Chrome  OS=Windows 10
+    Open Login Page  BROWSER=Chrome  OS=Mac OSX 10.12  VERSION=62x64  RESOLUTION=1366x768
     Enter User Name
     Enter Password
     Click Login

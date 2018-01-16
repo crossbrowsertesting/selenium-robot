@@ -9,15 +9,15 @@ ${ExpectedMessage}    You are now logged in!
 ${Message}            You are now logged in!
 ${Delay}              10s
 ${CBTUser}            chase@crossbrowsertesting.com
-${AccessKey}          YOURAUTHKEY
+${AccessKey}          NOTMYAUTHKEY
 ${Video}              true
 ${RemoteUrl}          http://${CBTUser}:${AccessKey}@hub.crossbrowsertesting.com:80/wd/hub
 
  
 *** Keywords ***
 Open Login Page
-    [Arguments]   ${BROWSER}  ${OS}
-    Open Browser   url=${SiteUrl}   browser=${BROWSER}   remote_url=${RemoteURL}   desired_capabilities=browserName:${BROWSER}, platform:${OS}, record_video:${Video}
+    [Arguments]   ${BROWSER}  ${VERSION}  ${OS}  ${RESOLUTION}
+    Open Browser   url=${SiteUrl}   browser=${BROWSER}   remote_url=${RemoteURL}   desired_capabilities=browserName:${BROWSER}, version: ${VERSION}, platform:${OS}, screenResolution:${RESOLUTION}, record_video:${Video}
  
 Maximize Browser
     Maximize Browser Window

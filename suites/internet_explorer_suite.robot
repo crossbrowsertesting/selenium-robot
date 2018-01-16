@@ -5,7 +5,7 @@ Force Tags        CrossBrowserTesting
  
 *** Test Cases ***
 Login Should Succeed with Correct Credentials
-    Open Login Page  BROWSER=Internet Explorer  OS=Windows 10
+    Open Login Page  BROWSER=Internet Explorer  VERSION=11  OS=Windows 10  RESOLUTION=1366x768
     Enter User Name
     Enter Password
     Click Login
