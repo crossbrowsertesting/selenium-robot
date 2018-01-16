@@ -12,4 +12,10 @@ Before executing your tests, ensure that you've corrected your username and auth
 pabot --outputdir reports suites/*.robot
 ```
 
+The command to run the pabot test with valueset.dat would be
+
+```
+pabot --pabotlib --resourcefile valueset.dat --outputdir reports suites/pabot_suite.robot
+```
+
 If you have any trouble, don't hesitate to reach out to us [here](mailto:support@crossbrowsertesting.com). 
