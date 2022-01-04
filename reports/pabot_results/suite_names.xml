@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180108 10:27:11.220" generator="Robot 3.0.2 (Python 2.7.10 on darwin)">
+<suite source="/Users/moowork/Documents/Work_test/selenium-robot/suites/pabot_suite.robot" id="s1" name="Pabot Suite">
+<test id="s1-t1" name="Login Should Succeed with Correct Credentials">
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180108 10:27:11.355" starttime="20180108 10:27:11.355"></status>
+</kw>
+<kw name="No Operation" library="BuiltIn">
+<doc>Does absolutely nothing.</doc>
+<status status="NOT_RUN" endtime="20180108 10:27:11.355" starttime="20180108 10:27:11.355"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="NOT_RUN" endtime="20180108 10:27:11.355" starttime="20180108 10:27:11.355"></status>
+</kw>
+<tags>
+<tag>CrossBrowserTesting</tag>
+</tags>
+<status status="PASS" endtime="20180108 10:27:11.355" critical="yes" starttime="20180108 10:27:11.354"></status>
+</test>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="NOT_RUN" endtime="20180108 10:27:11.356" starttime="20180108 10:27:11.356"></status>
+</kw>
+<status status="PASS" endtime="20180108 10:27:11.356" starttime="20180108 10:27:11.222"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">CrossBrowserTesting</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Pabot Suite" pass="1">Pabot Suite</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20180108 10:27:11.216" level="ERROR">Error in file '/Users/moowork/Documents/Work_test/selenium-robot/suites/pabot_suite.robot': Non-existing setting ''.</msg>
+<msg timestamp="20180108 10:27:11.241" level="ERROR">Error in file '/Users/moowork/Documents/Work_test/selenium-robot/tests/login_test.robot': Non-existing setting ''.</msg>
+<msg timestamp="20180108 10:27:11.243" level="ERROR">Error in file '/Users/moowork/Documents/Work_test/selenium-robot/tests/login_test.robot': Setting variable '' failed: Invalid variable name ''.</msg>
+</errors>
+</robot>

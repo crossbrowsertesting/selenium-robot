@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180108 10:27:31.644" generator="Rebot 3.0.2 (Python 2.7.10 on darwin)">
+<suite source="/Users/moowork/Documents/Work_test/selenium-robot/suites/pabot_suite.robot" id="s1" name="Pabot Suite">
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180108 10:27:31.418" starttime="20180108 10:27:31.418"></status>
+</kw>
+<test id="s1-t1" name="Login Should Succeed with Correct Credentials">
+<kw name="Acquire Value Set" library="pabot.PabotLib">
+<doc>Reserve a set of values for this execution.</doc>
+<assign>
+<var>${valuesetname}</var>
+</assign>
+<msg timestamp="20180108 10:27:11.667" level="INFO">Value set "Set1" acquired</msg>
+<msg timestamp="20180108 10:27:11.668" level="INFO">${valuesetname} = Set1</msg>
+<status status="PASS" endtime="20180108 10:27:11.668" starttime="20180108 10:27:11.664"></status>
+</kw>
+<kw name="Get Value From Set" library="pabot.PabotLib">
+<doc>Get a value from previously reserved value set.</doc>
+<arguments>
+<arg>browser</arg>
+</arguments>
+<assign>
+<var>${browser}</var>
+</assign>
+<msg timestamp="20180108 10:27:11.669" level="INFO">${browser} = Chrome</msg>
+<status status="PASS" endtime="20180108 10:27:11.670" starttime="20180108 10:27:11.668"></status>
+</kw>
+<kw name="Get Value From Set" library="pabot.PabotLib">
+<doc>Get a value from previously reserved value set.</doc>
+<arguments>
+<arg>os</arg>
+</arguments>
+<assign>
+<var>${os}</var>
+</assign>
+<msg timestamp="20180108 10:27:11.671" level="INFO">${os} = Windows10</msg>
+<status status="PASS" endtime="20180108 10:27:11.671" starttime="20180108 10:27:11.670"></status>
+</kw>
+<kw name="Open Login Page" library="login_test">
+<arguments>
+<arg>${browser}</arg>
+<arg>${os}</arg>
+</arguments>
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>url=${SiteUrl}</arg>
+<arg>browser=${BROWSER}</arg>
+<arg>remote_url=${RemoteURL}</arg>
+<arg>desired_capabilities=browserName:${BROWSER}, platform:${OS}, record_video:${Video}</arg>
+</arguments>
+<msg timestamp="20180108 10:27:11.672" level="INFO">Opening browser 'Chrome' to base url 'http://crossbrowsertesting.github.io/login-form.html' through remote server at 'http://YOURUSERNAME:YOURAUTHKEY@hub.crossbrowsertesting.com:80/wd/hub'.</msg>
+<status status="PASS" endtime="20180108 10:27:16.118" starttime="20180108 10:27:11.672"></status>
+</kw>
+<status status="PASS" endtime="20180108 10:27:16.118" starttime="20180108 10:27:11.671"></status>
+</kw>
+<kw name="Enter User Name" library="login_test">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=username</arg>
+<arg>${Username}</arg>
+</arguments>
+<msg timestamp="20180108 10:27:16.119" level="INFO">Typing text 'tester@crossbrowsertesting.com' into text field 'id=username'.</msg>
+<status status="PASS" endtime="20180108 10:27:17.244" starttime="20180108 10:27:16.119"></status>
+</kw>
+<status status="PASS" endtime="20180108 10:27:17.245" starttime="20180108 10:27:16.118"></status>
+</kw>
+<kw name="Enter Password" library="login_test">
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>id=password</arg>
+<arg>${Password}</arg>
+</arguments>
+<msg timestamp="20180108 10:27:17.246" level="INFO">Typing text 'test123' into text field 'id=password'.</msg>
+<status status="PASS" endtime="20180108 10:27:18.531" starttime="20180108 10:27:17.245"></status>
+</kw>
+<status status="PASS" endtime="20180108 10:27:18.531" starttime="20180108 10:27:17.245"></status>
+</kw>
+<kw name="Click Login" library="login_test">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks button identified by ``locator``.</doc>
+<arguments>
+<arg>id=submit</arg>
+</arguments>
+<msg timestamp="20180108 10:27:18.532" level="INFO">Clicking button 'id=submit'.</msg>
+<status status="PASS" endtime="20180108 10:27:19.840" starttime="20180108 10:27:18.531"></status>
+</kw>
+<status status="PASS" endtime="20180108 10:27:19.840" starttime="20180108 10:27:18.531"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>${Delay}</arg>
+</arguments>
+<msg timestamp="20180108 10:27:29.842" level="INFO">Slept 10 seconds</msg>
+<status status="PASS" endtime="20180108 10:27:29.843" starttime="20180108 10:27:19.840"></status>
+</kw>
+<kw name="Assert Logged In Message" library="login_test">
+<kw name="Element Text Should Be" library="Selenium2Library">
+<doc>Verifies that element ``locator`` contains exact text ``expected``.</doc>
+<arguments>
+<arg>id=logged-in</arg>
+<arg>${ExpectedMessage}</arg>
+<arg>${Message}</arg>
+</arguments>
+<msg timestamp="20180108 10:27:29.844" level="INFO">Verifying element 'id=logged-in' contains exact text 'You are now logged in!'.</msg>
+<status status="PASS" endtime="20180108 10:27:30.458" starttime="20180108 10:27:29.844"></status>
+</kw>
+<status status="PASS" endtime="20180108 10:27:30.458" starttime="20180108 10:27:29.843"></status>
+</kw>
+<kw name="Release Value Set" library="pabot.PabotLib">
+<doc>Release a reserved value set so that other executions can use it also.</doc>
+<status status="PASS" endtime="20180108 10:27:30.461" starttime="20180108 10:27:30.458"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180108 10:27:31.417" starttime="20180108 10:27:30.461"></status>
+</kw>
+<tags>
+<tag>CrossBrowserTesting</tag>
+</tags>
+<status status="PASS" endtime="20180108 10:27:31.417" critical="yes" starttime="20180108 10:27:11.663"></status>
+</test>
+<status status="PASS" endtime="20180108 10:27:31.418" starttime="20180108 10:27:11.541"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+<stat fail="0" pass="1">CrossBrowserTesting</stat>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Pabot Suite" pass="1">Pabot Suite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

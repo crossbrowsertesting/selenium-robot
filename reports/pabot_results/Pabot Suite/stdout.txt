@@ -1,0 +1,10 @@
+==============================================================================
+Pabot Suite                                                                   
+==============================================================================
+Login Should Succeed with Correct Credentials                         | PASS |
+------------------------------------------------------------------------------
+Pabot Suite                                                           | PASS |
+1 critical test, 1 passed, 0 failed
+1 test total, 1 passed, 0 failed
+==============================================================================
+Output:  /Users/moowork/Documents/Work_test/selenium-robot/reports/pabot_results/Pabot Suite/output.xml
